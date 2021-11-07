@@ -11,78 +11,151 @@
     />
     <title>itsmerana.com</title>
   </head>
-  <style>
-    section{
-      padding: 60px 0px;
-    }
-  </style>
+  <body>
+    <style>
+      section {
+        padding: 60px 0px;
+      }
+    </style>
 
-  <!-- navbar-->
-<nav class="navbar navbar-expand-md fixed-top bg-white navbar-light">
-  <div class="container-xxl">
-    <a href="#intro" class="navbar-brand">
-    <span class="fw-bold text-secondary">Portfolio</span></a>
+    <!-- navbar-->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white">
+      <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+          <span class="fw-bold text-secondary">Portfolio</span></a
+        >
 
-    <!-- Navbar Links -->
-    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#topics">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#reviews">Reviews</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Get in Touch</a>
-        </li>
-        <li class="nav-item d-md-none">
-          <a class="nav-link" href="#pricing">Hire me now</a>
-        </li>
-        <li class="nav-item ms-2 d-none d-md-inline">
-          <a class="btn btn-secondary" href="#pricing">Hire me</a>
-        </li>
-        
-      </ul>
-    </div>
+        <!-- Navbar Links -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#topics">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Get in Touch</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link" href="#pricing">Hire me now</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a class="btn btn-secondary" href="#pricing">Hire me</a>
+            </li>
+          </ul>
+        </div>
 
-    <!-- Toggle Button for mobile navbar -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Toggle Button for mobile navbar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
 
+    <!-- main image and intro text-->
+    <section id="intro">
+      <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2">Rana Ameer</div>
+              <div class="display-5 text-muted">A front end developper</div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              Hi There, I’m Rana and I am a self taught Front-End Web Developer.
+              I can help you on building your website.
+            </p>
+            <a href="#pricing" class="btn btn-secondary btn-lg">Hire me now</a>
+          </div>
+          <div class="col-md-5 text-center d-none d-md-block">
+            <img
+              src="./assets/lapt.jpg"
+              alt="laptop on desk"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </div>
-</nav>
-  <!-- main image and intro text-->
-  <section id="intro">
-<div class="container-lg">
-  <div class="row justify-content-center align-items-center">
-    <div class="col-md-5 text-center text-md-start">
-      <h1>
-        <div class="display-2">Rana Ameer</div>
-      <div class="display-5 text-muted">A front end developper</div>
-      </h1>
-      <p class="lead my-4 text-muted">Hi There, I’m Rana and I am a self taught Front-End Web Developer. I can help you on building your website.</p>
- <a href="#pricing" class="btn btn-secondary btn-lg">Hire me now</a>   
-    </div> 
-    <div class="col-md-5 text-center d-none d-md-block">
-      <img src="./assets/lapt.jpg" alt="laptop on desk" class="img-fluid">
-    </div> 
-  </div>
-</div> 
-  </section>
+    <!-- Cards -->
+    <section id="pricing" class="bg-light mt-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get to know me</h2>
+          <p class="lead text-muted">
+            Here you can check my skills, the languages I speak and the tools I
+            use
+          </p>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-2 border-primary">
+              <div class="card-body text-center py-4">
+                <h4 class="card-header text-primary">Skills</h4>
+                <p class="lead card-subtitle fw-bold my-3">
+                  What I can do for you
+                </p>
+                <div class="text-md-start">
+                  <p class="lead my-3">
+                    Setup a productive developpement environment.
+                  </p>
+                  <p class="lead my-3">Create responsive layout.</p>
+                  <p class="lead my-3">
+                    Build websites with dynamic functionality.
+                  </p>
+                  <p class="lead my-3">Deploy a website.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <!-- Cards -->
+          <div class="col-8 col-lg-3">
+            <div class="card border-primary">
+              <div class="card-body text-center py-4">
+                <h4 class="card-header text-primary">Languages</h4>
 
-  <section id="pricing" class="bg-light mt-5">
-    <div class="container-lg"></div>
-  </section>
+                <p class="lead my-2">Html</p>
+                <p class="lead my-2">CSS</p>
+                <p class="lead my-2">Javascript</p>
+                <h4 class="bord-title text-primary my-4">Frameworks</h4>
+                <p class="lead my-2">React</p>
+                <p class="lead my-2">Bootstrap</p>
+                <p class="lead my-2">SAAS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-primary">
+              <div class="card-body text-center py-4">
+                <h4 class="card-header text-primary">Tools</h4>
 
-  <!--Topic at a glance -->
+                <p class="lead my-3">VS code</p>
+                <p class="lead my-3">Git</p>
+                <p class="lead my-3">Github</p>
+                <p class="lead my-3">Terminal</p>
+                <p class="lead my-3">Chrome Developer Tools</p>
+                <p class="lead my-3">Figma</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  
-
-
+    <!--Topic at a glance -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
