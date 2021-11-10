@@ -4,10 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
+      href="css/main.min.css" rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -38,19 +35,29 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#topics">About</a>
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#reviews">Reviews</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Get in Touch</a>
-            </li>
+
             <li class="nav-item d-md-none">
-              <a class="nav-link" href="#pricing">Hire me now</a>
+              <a
+                class="nav-link"
+                href="https://www.upwork.com/freelancers/~0176a4b3aee064e042"
+                target="_blank"
+                >Hire me now</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info">Work informations</a>
             </li>
             <li class="nav-item ms-2 d-none d-md-inline">
-              <a class="btn btn-secondary" href="#pricing">Contact me</a>
+              <a class="btn btn-secondary text-white" href="#contact">Get in touch</a>
             </li>
           </ul>
         </div>
@@ -76,14 +83,19 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-md-5 text-center text-md-start">
             <h1>
-              <div class="display-2">Rana Ameer</div>
-              <div class="display-5 text-muted">A front end developper</div>
+              <div class="display-2 text-primary">Rana Ameer</div>
+              <div class="display-5  text-danger">A Front-End Developper</div>
             </h1>
             <p class="lead my-4 text-muted">
-              Hi There, I’m Rana and I am a self taught Front-End Web Developer.
-              I can help you on building your website.
+              Hi There, I’m Rana and I am a Front-End Web Developer. I can help
+              you on building your website.
             </p>
-            <a href="#pricing" class="btn btn-secondary btn-lg">Hire me now</a>
+            <a
+              href="https://www.upwork.com/freelancers/~0176a4b3aee064e042"
+              class="btn btn-secondary btn-lg text-white"
+              target="_blank"
+              >Hire me now</a
+            >
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
             <img
@@ -97,11 +109,11 @@
     </section>
 
     <!-- Cards -->
-    <section id="pricing" class="bg-light mt-5">
+    <section id="info" class="bg-light mt-5">
       <div class="container-lg">
-        <div class="text-center">
+        <div class="text-center text-primary">
           <h2>Get to know my work field</h2>
-          <p class="lead text-muted">
+          <p class="lead text-muted text-primary">
             Here you can check my skills, the languages I speak and the tools I
             use
           </p>
@@ -162,11 +174,11 @@
     </section>
 
     <!--Topic at a glance -->
-    <section id="topics">
+    <section id="about">
       <!--container-->
       <div class="container-md">
         <div class="text-center">
-          <h2>About me</h2>
+          <h2 class="text-primary">About me</h2>
           <p class="lead text-muted">A quick glance at my personal life</p>
         </div>
 
@@ -323,67 +335,116 @@
       </div>
     </section>
 
-    <!-- reviews -->
-    <section id="reviews" class="bg-light">
+    <!--Portfolio section-->
+    <section id="portfolio" class="bg-light mt-5">
       <div class="container-lg">
         <div class="text-center">
-          <h2><i class="bi bi-stars"></i>Reviews</h2>
-          <p class="lead">
-            People I've worked with have said some nice things...
+          <h2 class="text-primary">My portfolio</h2>
+          <p class="lead text-muted">
+            These are the project that I have done so far
           </p>
         </div>
 
-        <div class="row my-5 justify-content-center">
-          <div class="col-lg-8">
-            <div class="list-group">
-              <div class="list-group-item py-3">
-                <div class="pb-2">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <h5 class="mb-1">
-                  "Rana does a very good qualitative job in record time. I look
-                  forward to hire her again!"
-                </h5>
-                <small>Review by Luis</small>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide my-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <a
+                href="https://github.com/Rana7060/Password-meter-react.git"
+                target="_blank"
+              >
+                <img
+                  src="./assets/passmeter.png"
+                  class="d-block w-100 img-fluid"
+                  alt=""
+                />
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>This is a password meter project</h5>
+                <p>
+                  When you press on the image you will be redirected to github
+                </p>
               </div>
-              <div class="list-group-item py-3">
-                <div class="pb-2">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <h5 class="mb-1">
-                  "I love working with Rana. Communication is easy and her work
-                  is of very high quality. I will definitely hire her again. 5
-                  STARS"
-                </h5>
-                <small>Review by Luis</small>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <a
+                href="https://github.com/Rana7060/Sign-in-page.git"
+                target="_blank"
+              >
+                <img
+                  src="./assets/signup.png"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>This is a sign up page</h5>
+                <p>
+                  When you press on the image you will be redirected to github.
+                </p>
               </div>
-              <div class="list-group-item py-3">
-                <div class="pb-2">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <h5 class="mb-1">
-                  "Smart working process, always on time, communication perfect.
-                  Everythings great :)"
-                </h5>
-                <small>Review by Luis</small>
+            </div>
+            <div class="carousel-item">
+              <a
+                href="https://github.com/Rana7060/React-blog-project.git"
+                target="_blank"
+                ><img
+                  src="./assets/blog.png"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>This is a Blog</h5>
+                <p>
+                  When you press on the image you will be redirected to github
+                </p>
               </div>
             </div>
           </div>
-          <!--row-->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-
         <!--container-->
       </div>
     </section>
@@ -392,7 +453,7 @@
     <section id="contact">
       <div class="container-lg">
         <div class="text-center">
-          <h2>Contact me</h2>
+          <h2 class="text-primary">Contact me</h2>
           <p class="lead">
             Questions to ask? Fill out the form to contact me directly...
           </p>
@@ -426,7 +487,6 @@
                   placeholder="Sam smith"
                 />
               </div>
-
               <div class="form-floating mb-4 mt-5">
                 <textarea
                   class="form-control"
@@ -437,14 +497,106 @@
                   >What is your question:</label
                 >
               </div>
-
               <div class="mb-4 text-center">
-                <button type="submit" class="btn btn-secondary">Submit</button>
+                <button type="submit" class="btn btn-secondary text-white">Submit</button>
               </div>
             </form>
           </div>
         </div>
         <!--container-->
+      </div>
+    </section>
+
+    <section id="reviews" class="bg-altdark">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2 class="text-primary"><i class="bi bi-stars text-altdark"></i>Reviews</h2>
+          <p class="lead">
+            People I've worked with have said some nice things...
+          </p>
+        </div>
+
+        <div class="row my-5 justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2 text-primary">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">
+                  "Rana does a very good qualitative job in record time. I look
+                  forward to hire her again!"
+                </h5>
+                <small>Review by Luis</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2 text-primary">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">
+                  "I love working with Rana. Communication is easy and her work
+                  is of very high quality. I will definitely hire her again. 5
+                  STARS"
+                </h5>
+                <small>Review by Luis</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2 text-primary">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">
+                  "Smart working process, always on time, communication perfect.
+                  Everythings great :)"
+                </h5>
+                <small>Review by Luis</small>
+              </div>
+            </div>
+          </div>
+          <!--row-->
+        </div>
+        <!--container-->
+      </div>
+    </section>
+
+    <!--footer-->
+    <section class="pb-0">
+      <div class="container-lg">
+        <div class="text-end pb-5">
+          <h4>
+            Follow me:
+            <a href="https://github.com/Rana7060" target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rana-ameer-b989a41b8/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/itsmerana___/?hl=en"
+              target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/rana.amir.7355079" target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </h4>
+        </div>
+        <div class="mb-0 pb-0 text-center">
+          <small>copyright</small>
+        </div>
       </div>
     </section>
 
