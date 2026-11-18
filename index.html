@@ -1,671 +1,225 @@
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/main.min.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
-    />
-    <title>itsmerana.com</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101b23" />
+    <meta name="description" content="Rana Ameer is a Senior Frontend Developer based in Hamburg, building polished web experiences and digital products with Angular, React, TypeScript, and thoughtful UI design." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rana Ameer — Senior Frontend Developer & Product Builder" />
+    <meta property="og:description" content="Selected work, product experiments, and frontend engineering by Rana Ameer." />
+    <meta property="og:image" content="./assets/me2.jpeg" />
+    <meta name="color-scheme" content="light" />
+    <title>Rana Ameer — Senior Frontend Developer & Product Builder</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101b23'/%3E%3Ctext x='50%25' y='54%25' fill='%23c7f48a' font-family='Arial' font-size='29' font-weight='700' text-anchor='middle' dominant-baseline='middle'%3ERA%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <script src="./js/portfolio.js" defer></script>
   </head>
   <body>
-    <style>
-      section {
-        padding: 60px 0px;
-      }
-    </style>
-
-    <!-- navbar-->
-    <nav
-      class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow-sm"
-    >
-      <div class="container-xxl">
-        <!-- Toggle Button for mobile navbar -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#main-nav"
-          aria-controls="main-nav"
-          aria-expanded="true"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="shell nav-shell">
+        <a class="brand" href="#home" aria-label="Rana Ameer, home">
+          <span class="brand-mark" aria-hidden="true">ra<span>.</span></span>
+          <span class="brand-name">Rana Ameer</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation">
+          <span></span><span></span>
         </button>
-        <a href="#intro" class="navbar-brand">
-          <span class="fw-bold text-secondary">Portfolio</span></a
-        >
-
-        <!-- Navbar Links -->
-        <div
-          class="collapse navbar-collapse justify-content-end align-center"
-          id="main-nav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Reviews</a>
-            </li>
-
-            <li class="nav-item d-md-none">
-              <a
-                class="nav-link"
-                href="https://www.upwork.com/freelancers/~0176a4b3aee064e042"
-                target="_blank"
-                >Hire me now</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#info">Work</a>
-            </li>
-            <li class="nav-item ms-2 d-none d-md-inline">
-              <a class="btn btn-secondary text-white" href="#contact"
-                >Get in touch</a
-              >
-            </li>
-          </ul>
-        </div>
+        <nav class="site-nav" id="main-navigation" aria-label="Main navigation">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="nav-contact">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
       </div>
-    </nav>
+    </header>
 
-    <!-- main image and intro text-->
-    <section id="intro">
-      <div class="container-lg">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-5 text-center text-md-start">
-            <h1>
-              <div class="display-2 text-primary">Rana Ameer</div>
-              <div class="display-5 text-danger">A Front-End Developer</div>
-            </h1>
-            <p class="lead my-4 text-muted">
-              Powered by VScode, Figma, and coffee, I turn your requirement into
-              websites. I enjoy bringing ideas to life in a browser.
-            </p>
-            <a
-              href="https://www.upwork.com/freelancers/~0176a4b3aee064e042"
-              class="btn btn-secondary btn-lg text-white"
-              target="_blank"
-              >Hire me now</a
-            >
-          </div>
-          <div class="col-md-5 text-center d-none d-md-block">
-            <img
-              src="./assets/lapt.jpg"
-              alt="laptop on desk"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cards -->
-    <section id="info" class="bg-light mt-5">
-      <div class="container-lg">
-        <div class="text-center text-primary">
-          <h2>Get to know my work field</h2>
-          <p class="lead text-muted text-primary">
-            Here you can check my skills, the languages I speak and the tools I
-            use
-          </p>
-        </div>
-        <div class="row my-5 align-items-center justify-content-center">
-      
-
-          <div class="col-8 col-lg-4 col-xl-3 my-5">
-            <div class="card border-primary">
-              <div class="card-body text-center py-4">
-                <h4 class="card-header text-primary">Languages</h4>
-
-                <p class="lead my-2">Html</p>
-                <p class="lead my-2">CSS</p>
-                <p class="lead my-2">Javascript</p>
-                <h4 class="bord-title text-primary my-4">Frameworks</h4>
-                <p class="lead my-2">React</p>
-                <p class="lead my-2">Bootstrap</p>
-                <p class="lead my-2">SASS</p>
-                <p class="lead my-2">Redux</p>
-                <p class="lead my-2">Material UI</p>
-              </div>
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="shell hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow eyebrow-light"><span class="signal-dot" aria-hidden="true"></span> SENIOR FRONTEND DEVELOPER <span class="eyebrow-separator">/</span> HAMBURG, GERMANY</p>
+            <h1 id="hero-title">I make digital products <span class="serif-highlight">feel human.</span></h1>
+            <p class="hero-description">I'm Rana — a frontend engineer who cares about the details. I turn complex ideas into intuitive interfaces, scalable systems, and products people enjoy using.</p>
+            <div class="hero-actions">
+              <a href="#projects" class="button button-accent">Explore my work <span aria-hidden="true">↗</span></a>
+              <a href="mailto:ranaameer7260@gmail.com" class="text-link text-link-light">Get in touch <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-footnote">
+              <span class="footnote-line" aria-hidden="true"></span>
+              <span>Currently building at <strong>Gemploy GmbH</strong> and exploring independent products.</span>
             </div>
           </div>
 
-          <div class="col-8 col-lg-4 col-xl-4">
-            <div class="card border-2 border-primary">
-              <div class="card-body text-center py-4">
-                <h4 class="card-header text-primary">Skills</h4>
-                <p class="lead card-subtitle fw-bold my-3">
-                  What I can do for you
-                </p>
-                <div class="text-md-start">
-                  <p class="lead my-3">
-                    Setup a productive developpement environment.
-                  </p>
-                  <p class="lead my-3">Create responsive layout.</p>
-                  <p class="lead my-3">
-                    Build websites with dynamic functionality.
-                  </p>
-                  <p class="lead my-3">Deploy a website.</p>
-                  <p class="lead my-3">DOM and DOM manipulations.</p>
+          <div class="hero-visual" aria-label="Abstract illustration of a digital product interface">
+            <div class="orbit-line orbit-line-one" aria-hidden="true"></div>
+            <div class="orbit-line orbit-line-two" aria-hidden="true"></div>
+            <div class="visual-caption">PRODUCT THINKING <span>×</span> PIXEL PRECISION</div>
+            <div class="interface-window" aria-hidden="true">
+              <div class="window-top"><span class="traffic-dots"><i></i><i></i><i></i></span><span>the craft / 2026</span><span>⌁</span></div>
+              <div class="window-body">
+                <div class="window-label">BUILDING THE NEXT THING</div>
+                <div class="window-heading">Good design.<br /><em>Great code.</em></div>
+                <div class="mini-divider"></div>
+                <div class="ui-line"><span>01</span><span>Think in systems</span><span>↗</span></div>
+                <div class="ui-line"><span>02</span><span>Ship with intent</span><span>↗</span></div>
+                <div class="ui-line"><span>03</span><span>Keep improving</span><span>↗</span></div>
+              </div>
+            </div>
+            <div class="float-chip float-chip-top">UX <span>+</span> ENGINEERING</div>
+            <div class="float-chip float-chip-bottom"><span class="chip-spark" aria-hidden="true">✳</span> BUILT WITH CARE</div>
+          </div>
+        </div>
+        <div class="shell skills-ribbon" aria-label="Core tools and disciplines">
+          <span class="ribbon-label">MY TOOLKIT</span>
+          <span>Angular</span><span>React</span><span>TypeScript</span><span>Design Systems</span><span>UI/UX</span><span>Product Thinking</span>
+        </div>
+      </section>
+
+      <section class="section section-projects" id="projects" aria-labelledby="projects-title">
+        <div class="shell">
+          <div class="section-intro">
+            <div>
+              <p class="eyebrow"><span class="section-number">01</span> / SELECTED BUILDS</p>
+              <h2 id="projects-title">Ideas that made it <span class="serif-highlight dark-serif">off the canvas.</span></h2>
+            </div>
+            <p class="section-aside">From mobility to daily life to developer tools — a look at the products I'm shaping.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-darb">
+              <div class="project-art art-darb" aria-hidden="true">
+                <span class="art-corner">01 / PRODUCT</span>
+                <div class="darb-map">
+                  <span class="route-node route-node-a"></span><span class="route-node route-node-b"></span>
+                  <span class="route-path"></span><span class="route-pin">↗</span>
                 </div>
+                <div class="darb-ride"><span class="ride-icon">↗</span><div><b>On your way</b><small>Moving cities, made simple.</small></div><span class="ride-bars">▂▄▆</span></div>
+                <span class="art-stamp">DARB / LB</span>
               </div>
-            </div>
-          </div>
-          <div class="col-8 col-lg-4 col-xl-3">
-            <div class="card border-primary">
-              <div class="card-body text-center py-4">
-                <h4 class="card-header text-primary">Tools</h4>
-
-                <p class="lead my-3">VS code</p>
-                <p class="lead my-3">Git</p>
-                <p class="lead my-3">Github</p>
-                <p class="lead my-3">Terminal</p>
-                <p class="lead my-3">Chrome Developer Tools</p>
-                <p class="lead my-3">npm</p>
-                <p class="lead my-3">Figma</p>
+              <div class="project-body">
+                <div class="project-meta"><span>PRODUCT 01</span><span class="status"><i></i> IN DEVELOPMENT</span></div>
+                <h3>Darb <span aria-hidden="true">↗</span></h3>
+                <p>A moto-taxi and courier platform concept built for Lebanon. Designing a simpler experience for getting people and deliveries from A to B.</p>
+                <div class="project-tags"><span>React</span><span>Vite</span><span>Product UI</span></div>
+                <span class="project-availability">Private project · Preview not public</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </article>
 
-    <!--Topic at a glance -->
-    <section id="about">
-      <!--container-->
-      <div class="container-md">
-        <div class="text-center">
-          <h2 class="text-primary">About me</h2>
-          <p class="lead text-muted">A quick glance at my personal life</p>
-        </div>
-
-        <!-- Row-->
-        <div class="row my-5 g-2 justify-content-around align-items-center">
-          <div class="col-6 col-lg-4">
-            <img
-              src="./assets/me2.jpeg"
-              alt="personal photo"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-lg-6">
-            <!--accordion-->
-            <div class="accordion" id="chapters">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-1">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#chapter-1"
-                    aria-expanded="true"
-                    aria-controls="chapter-1"
-                  >
-                    Languages I speak
-                  </button>
-                </h2>
-                <div
-                  id="chapter-1"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-1"
-                  data-bs-parent="#chapters"
-                >
-                  <div class="accordion-body">
-                    <p>English</p>
-                    <p>French</p>
-                    <p>Arabic</p>
-                    <!--body-->
-                  </div>
-                  <!--content-->
+            <article class="project-card project-questnest">
+              <div class="project-art art-quest" aria-hidden="true">
+                <span class="art-corner">02 / PRODUCT</span>
+                <div class="quest-stars">✦ <span>✳</span> ✦</div>
+                <div class="quest-board">
+                  <div class="quest-board-header"><span>YOUR QUESTS</span><span>LVL 08 ✦</span></div>
+                  <div class="quest-task"><span class="quest-check">✓</span><span>Complete daily quest</span><b>+40 XP</b></div>
+                  <div class="quest-task"><span class="quest-check empty">○</span><span>Plan the week</span><b>+20 XP</b></div>
+                  <div class="quest-progress"><span></span></div>
                 </div>
-
-                <!--accordion item-->
+                <span class="art-stamp">CO-OP / HOME</span>
               </div>
+              <div class="project-body">
+                <div class="project-meta"><span>PRODUCT 02</span><span class="status"><i></i> PRIVATE BETA</span></div>
+                <h3>QuestNest <span aria-hidden="true">↗</span></h3>
+                <p>Everyday life, reimagined as a co-op game. Shared chores, XP, habits, groceries, recipes, and meal planning bring a little adventure home.</p>
+                <div class="project-tags"><span>React Native</span><span>Expo</span><span>Supabase</span></div>
+                <span class="project-availability">Private project · Not publicly launched</span>
+              </div>
+            </article>
 
-              <!--accordion-->
-            </div>
-            <div class="accordion" id="chapters">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-2">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#chapter-2"
-                    aria-expanded="true"
-                    aria-controls="chapter-2"
-                  >
-                    Address
-                  </button>
-                </h2>
-                <div
-                  id="chapter-2"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-2"
-                  data-bs-parent="#chapters"
-                >
-                  <div class="accordion-body">
-                    <p>Baalback, Bekaa, Lebanon</p>
-
-                    <!--body-->
-                  </div>
-                  <!--content-->
+            <article class="project-card project-orbit">
+              <div class="project-art art-orbit" aria-hidden="true">
+                <span class="art-corner">03 / DEVELOPER TOOLS</span>
+                <div class="orbit-dashboard">
+                  <div class="dashboard-header"><span class="dashboard-mark">◈</span><span>ORBIT / WORKSPACE</span><span class="dashboard-live">● PRIVATE</span></div>
+                  <div class="dashboard-columns"><div><small>BACKLOG</small><span></span><span></span><span></span></div><div><small>IN PROGRESS</small><span></span><span></span></div><div><small>REVIEW</small><span></span></div></div>
                 </div>
-
-                <!--accordion item-->
+                <span class="art-stamp">WORKFLOW / AI</span>
               </div>
-
-              <!--accordion-->
-            </div>
-            <div class="accordion" id="chapters">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-3">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#chapter-3"
-                    aria-expanded="true"
-                    aria-controls="chapter-3"
-                  >
-                    Email Address
-                  </button>
-                </h2>
-                <div
-                  id="chapter-3"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-3"
-                  data-bs-parent="#chapters"
-                >
-                  <div class="accordion-body">
-                    <p>ranaameer7260@gmail.com</p>
-
-                    <!--body-->
-                  </div>
-                  <!--content-->
-                </div>
-
-                <!--accordion item-->
+              <div class="project-body">
+                <div class="project-meta"><span>PRODUCT 03</span><span class="status"><i></i> PRIVATE PILOT</span></div>
+                <h3>ORBIT <span aria-hidden="true">↗</span></h3>
+                <p>A private developer command center connecting tickets, repositories, and delivery signals. Built around secure workflows, with AI-agent orchestration on the roadmap.</p>
+                <div class="project-tags"><span>TypeScript</span><span>Supabase</span><span>Integrations</span></div>
+                <a class="project-link" href="https://github.com/Orbit-devlopement/orbit-website" target="_blank" rel="noopener noreferrer">Explore public website source <span aria-hidden="true">↗</span></a>
               </div>
-
-              <!--accordion-->
-            </div>
-            <div class="accordion" id="chapters">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading-4">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#chapter-4"
-                    aria-expanded="true"
-                    aria-controls="chapter-4"
-                  >
-                    University Degree
-                  </button>
-                </h2>
-                <div
-                  id="chapter-4"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="heading-4"
-                  data-bs-parent="#chapters"
-                >
-                  <div class="accordion-body">
-                    <p>Masters degree in Applied Physics</p>
-
-                    <!--body-->
-                  </div>
-                  <!--content-->
-                </div>
-              </div>
-              <div class="accordion" id="chapters">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="heading-5">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#chapter-5"
-                      aria-expanded="true"
-                      aria-controls="chapter-5"
-                    >
-                      My resume
-                    </button>
-                  </h2>
-                  <div
-                    id="chapter-5"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="heading-5"
-                    data-bs-parent="#chapters"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        <a
-                          href="https://cvdesignr.com/p/619ea5ea7c82b"
-                          target="_blank"
-                          >My resume 2022</a
-                        >
-                      </p>
-
-                      <!--body-->
-                    </div>
-                    <!--content-->
-                  </div>
-
-                  <!--accordion item-->
-                </div>
-                <!--accordion item-->
-              </div>
-
-              <!--accordion-->
-            </div>
-
-            <!--picture-->
+            </article>
           </div>
-          <!-- row-->
+          <p class="project-disclaimer">Visuals are conceptual illustrations, not screenshots of the applications. Product features and availability may evolve during development.</p>
         </div>
-        <!--container-->
-      </div>
-    </section>
+      </section>
 
-    <!--Portfolio section-->
-    <section id="portfolio" class="bg-light mt-5">
-      <div class="container-lg">
-        <div class="text-center">
-          <h2 class="text-primary">My portfolio</h2>
-          <p class="lead text-muted">
-            These are the project that I have done so far
-          </p>
-        </div>
-
-        <div
-          id="carouselExampleDark"
-          class="carousel carousel-dark slide my-5"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+      <section class="section section-experience" id="experience" aria-labelledby="experience-title">
+        <div class="shell experience-layout">
+          <div class="experience-aside">
+            <p class="eyebrow"><span class="section-number">02</span> / THE JOURNEY</p>
+            <h2 id="experience-title">Experience that <span class="serif-highlight dark-serif">connects the dots.</span></h2>
+            <p>From UI design and hands-on development to leading frontend work on production products.</p>
+            <a class="text-link" href="https://github.com/Rana7060" target="_blank" rel="noopener noreferrer">See my GitHub <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <a
-                href="https://github.com/Rana7060/Password-meter-react.git"
-                target="_blank"
-              >
-                <img
-                  src="./assets/passmeter.png"
-                  class="d-block w-100 img-fluid"
-                  alt=""
-                />
-              </a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>This is a password meter project</h5>
-                <p>
-                  When you press on the image you will be redirected to github
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <a
-                href="https://github.com/Rana7060/Sign-in-page.git"
-                target="_blank"
-              >
-                <img
-                  src="./assets/signup.png"
-                  class="d-block w-100 img-fluid"
-                  alt="..."
-                />
-              </a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>This is a sign up page</h5>
-                <p>
-                  When you press on the image you will be redirected to github.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <a
-                href="https://github.com/Rana7060/React-blog-project.git"
-                target="_blank"
-                ><img
-                  src="./assets/blog.png"
-                  class="d-block w-100 img-fluid"
-                  alt="..."
-              /></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>This is a Blog</h5>
-                <p>
-                  When you press on the image you will be redirected to github
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <!--container-->
-      </div>
-    </section>
-
-    <!--contact me form-->
-    <section id="contact">
-      <div class="container-lg">
-        <div class="text-center">
-          <h2 class="text-primary">Contact me</h2>
-          <a
-            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJftvBhfDGkwSFdqcBCVCbcSvqHcScdqDNRzwgbHhLQnclvZXFxsBFzBmswjKDJmrNnDdxV"
-            target="_blank"
-            >ranaameer7260@gmail.com</a
-          >
-        </div>
-      </div>
-      <!-- <div class="container-lg">
-        <div class="text-center">
-          <h2 class="text-primary">Contact me</h2>
-          <p class="lead">
-            Questions to ask? Fill out the form to contact me directly...
-          </p>
-        </div>
-        <div class="row justify-content-center my-5">
-          <div class="col-lg-6">
-            <form>
-              <label for="email" class="form-label">Email Address:</label>
-
-              <div class="mb-4 input-group">
-                <span class="input-group-text"
-                  ><i class="bi bi-envelope-fill"></i
-                ></span>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="samsmith@exemple.com"
-                />
-              </div>
-
-              <label for="name" class="form-label">Full name:</label>
-              <div class="mb-4 input-group">
-                <span class="input-group-text"
-                  ><i class="bi bi-person-fill"></i
-                ></span>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Sam smith"
-                />
-              </div>
-              <div class="form-floating mb-4 mt-5">
-                <textarea
-                  class="form-control"
-                  id="subject"
-                  style="height: 140px"
-                ></textarea>
-                <label for="subject" class="floating-label"
-                  >What is your question:</label
-                >
-              </div>
-              <div class="mb-4 text-center">
-                <button type="submit" class="btn btn-secondary text-white">
-                  Submit
-                </button>
-              </div>
-            </form>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-year">2026 — PRESENT</span>
+              <div><h3>Senior Frontend Developer</h3><p class="timeline-company">Gemploy GmbH <span>· Hamburg · Hybrid</span></p><p>Building and refining frontend experiences for business software, with a focus on maintainable Angular architecture, usability, and consistent product interfaces.</p></div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">2022 — 2025</span>
+              <div><h3>Senior Frontend Developer / UX UI Designer</h3><p class="timeline-company">candidate select GmbH <span>· Cologne</span></p><p>Worked across frontend engineering and interface design, focusing on responsive applications, performance, and better user experiences.</p></div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">2021 — 2022</span>
+              <div><h3>Frontend Developer / UI UX Designer</h3><p class="timeline-company">Freelance Web Development <span>· Independent</span></p><p>Created responsive websites and landing pages using JavaScript, React, and AngularJS, and connected interfaces to REST APIs.</p></div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">2020</span>
+              <div><h3>Frontend Developer Intern</h3><p class="timeline-company">Michel Daher Foundation <span>· Remote</span></p><p>Early professional experience in frontend development and web interface design.</p></div>
+            </article>
           </div>
         </div>
-        <!--container-->
-      <!-- </div> -->
-    </section>
-    <!--reviews-->
-    <section id="reviews" class="bg-light">
-      <div class="container-lg">
-        <div class="text-center">
-          <h2 class="text-primary">
-            <i class="bi bi-stars text-altdark"></i>Reviews
-          </h2>
-          <p class="lead">
-            People I've worked with have said some nice things...
-          </p>
-        </div>
+      </section>
 
-        <div class="row my-5 justify-content-center">
-          <div class="col-lg-8">
-            <div class="list-group">
-              <div class="list-group-item py-3">
-                <div class="pb-2 text-primary">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <h6 class="mb-1">
-                  <em>
-                    "Rana does a very good qualitative job in record time. I
-                    look forward to hire her again!"</em
-                  >
-                </h6>
-                <small>Review by Luis</small>
-              </div>
-              <div class="list-group-item py-3">
-                <div class="pb-2 text-primary">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <h6 class="mb-1">
-                  <em>
-                    "I love working with Rana. Communication is easy and her
-                    work is of very high quality. I will definitely hire her
-                    again. 5 STARS"</em
-                  >
-                </h6>
-                <small>Review by Luis</small>
-              </div>
-              <div class="list-group-item py-3">
-                <div class="pb-2 text-primary">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <h6 class="mb-1">
-                  <em>
-                    "Smart working process, always on time, communication
-                    perfect. Everythings great :)"</em
-                  >
-                </h6>
-                <small>Review by Mariam</small>
-              </div>
+      <section class="section section-about" id="about" aria-labelledby="about-title">
+        <div class="shell about-layout">
+          <div class="about-photo-wrap">
+            <img src="./assets/me2.jpeg" alt="Rana Ameer" loading="lazy" width="480" height="600" />
+            <span class="photo-label">DESIGN MINDED. ENGINEERING DRIVEN.</span>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow"><span class="section-number">03</span> / A LITTLE ABOUT ME</p>
+            <h2 id="about-title">More than <span class="serif-highlight dark-serif">just code.</span></h2>
+            <p class="about-lead">I'm a developer with a designer's eye and a problem-solver's mindset.</p>
+            <p>My background in Applied Physics trained me to approach complex problems analytically. Frontend development gave me the creative space to turn those solutions into products people can actually use.</p>
+            <p>Today, I combine engineering, interaction design, and product thinking — from the smallest UI detail to the structure behind a scalable application.</p>
+            <div class="expertise">
+              <div><span>01 / ENGINEERING</span><p>Angular, React, TypeScript, JavaScript, API integration, Git</p></div>
+              <div><span>02 / PRODUCT & DESIGN</span><p>Interface design, responsive experiences, design systems, usability</p></div>
+              <div><span>03 / CURRENT INTERESTS</span><p>SaaS products, developer tooling, thoughtful automation</p></div>
             </div>
           </div>
-          <!--row-->
         </div>
-        <!--container-->
-      </div>
-    </section>
+      </section>
 
-    <!--footer-->
-    <section class="pb-0">
-      <div class="container-lg">
-        <div class="text-end pb-5">
-          <h4>
-            Follow me:
-            <a href="https://github.com/Rana7060" target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/rana-ameer-b989a41b8/"
-              target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/itsmerana___/?hl=en"
-              target="_blank"
-              ><i class="bi bi-instagram"></i
-            ></a>
-            <a href="https://www.facebook.com/rana.amir.7355079" target="_blank"
-              ><i class="bi bi-facebook"></i
-            ></a>
-          </h4>
+      <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-layout">
+          <div>
+            <p class="eyebrow eyebrow-light"><span class="section-number">04</span> / SAY HELLO</p>
+            <h2 id="contact-title">Have something <span class="serif-highlight">interesting</span> in mind?</h2>
+            <p>I'm always up for a conversation about useful products, thoughtful interfaces, and interesting engineering challenges.</p>
+            <a class="button button-accent" href="mailto:ranaameer7260@gmail.com?subject=Hello%20Rana">Start a conversation <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-details">
+            <span class="contact-label">REACH ME AT</span>
+            <a href="mailto:ranaameer7260@gmail.com">ranaameer7260@gmail.com <span aria-hidden="true">↗</span></a>
+            <span class="contact-label contact-label-secondary">FIND MY WORK</span>
+            <a href="https://github.com/Rana7060" target="_blank" rel="noopener noreferrer">GitHub / Rana7060 <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <div class="mb-0 pb-0 text-center">
-          <small>copyright &copy; 2021, Rana Ameer</small>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js"></script>
+    <footer class="site-footer">
+      <div class="shell footer-layout"><span class="footer-brand">ra<span>.</span></span><p>© <span id="year">2026</span> Rana Ameer. Designed & built with intention.</p><a href="#top">Back to top ↑</a></div>
+    </footer>
   </body>
 </html>
